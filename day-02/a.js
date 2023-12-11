@@ -5,7 +5,7 @@ const { readFileSync } = require("fs");
  * @param {number} red
  * @param {number} green
  * @param {number} blue
- * @return {any}
+ * @return {number}
  */
 const gameIsPossible = (path, red, green, blue) => {
   const raw = readFileSync(path).toString("utf8").trim().split(/\n/g);
